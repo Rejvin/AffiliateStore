@@ -1,0 +1,189 @@
+/*--
+    - common css
+-----------------------------------------*/
+html, body {height: 100%;}
+
+/*---------- common overlay CSS----------*/
+.overlay {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: #ddd;
+    background-size: cover;
+    background-position: center;
+	z-index: 1;
+}
+.overlay::after {
+	background: #0363D1;
+  position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	opacity: .5;
+	z-index: -1;
+}
+/*---------- transition css ----------*/
+.transition-4s {transition: all .4s ease-in;}
+
+
+/*---------- common section CSS----------*/
+.title-overlay-wrap {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+}
+.title-overlay-wrap h1 {
+    margin: 0;
+    color: #ffffff;
+}
+
+/*---------- button CSS----------*/
+
+/*---------- Background CSS----------*/
+
+
+/*---------- Sticky header CSS----------*/
+.goToTop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+/*---------- Image border CSS----------*/
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 400ms ease-in;
+    transition: all 400ms ease-in;
+    background: #ee3c9e;
+background: -moz-linear-gradient(top, #ee3c9e 3%, #a53dc7 40%, #b13dc1 65%, #593ef1 100%);
+background: -webkit-linear-gradient(top, #ee3c9e 3%,#a53dc7 40%,#b13dc1 65%,#593ef1 100%);
+background: linear-gradient(to bottom, #ee3c9e 3%,#a53dc7 40%,#b13dc1 65%,#593ef1 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee3c9e', endColorstr='#593ef1',GradientType=0 );
+}
+.gallery-border {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid transparent;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+    -webkit-transition: all 400ms ease-in;
+    transition: all 400ms ease-in;
+    left: 10px;
+    bottom: 10px;
+    z-index: 2;
+}
+
+/*--------------04. Start of Scroll Top CSS------------------*/
+.scrollup {
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 56px;
+    right: 30px;
+    background: #0363D1;
+    border: 2px solid #0363D1;
+    color: #ffffff;
+    font-size: 16px;
+    background-position: center;
+    z-index: 999;
+    display: none;
+}
+.scrollup:hover {
+    background: #ffffff; 
+    color: #0363D1;
+}
+/*--------------04. End of Scroll Top CSS------------------*/
+
+/*--------------05. Start of PreLoader CSS------------------*/
+.app-site-preloader-wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #dddddd;
+    z-index: 9999;
+}
+.app-site-preloader-wrap .spinner2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    background: transparent;
+}
+
+/*----------Jquery preloader css for body----------*/
+.spinner2 {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner2 > div {
+  background-color: #fff;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+          animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner2 .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner2 .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner2 .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner2 .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+/*--------------05. End of PreLoader CSS------------------*/
+
+/*--------------Start of Owl carpusel------------------*/
+.owl-stage {
+    padding-bottom: 10px;
+}
+/*--------------End of Owl carpusel------------------*/
