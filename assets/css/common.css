@@ -6,7 +6,7 @@ html, body {height: 100%;}
 /*---------- common overlay CSS----------*/
 .overlay {
 	position: relative;
-	height: 100%;
+	height: auto;
 	width: 100%;
 	background: #ddd;
     background-size: cover;
@@ -38,8 +38,15 @@ html, body {height: 100%;}
 .title-overlay-wrap h1 {
     margin: 0;
     color: #ffffff;
+    font-size: 50px;
 }
-
+.title-overlay-wrap p {
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.title-overlay-wrap p i {margin: 0 10px;}
 /*---------- button CSS----------*/
 
 /*---------- Background CSS----------*/

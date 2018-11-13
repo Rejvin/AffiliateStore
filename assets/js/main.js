@@ -46,8 +46,12 @@
     	//---------Mobile Search-----------
 		$('.mobile-search').click(function(){
 			$('.header-search-box.mobile').toggle();
-		 });
+		});
+		$('.search-close').click(function(){
+			$('.header-search-box.mobile').hide();
+		});
 
+		//---------Tooltip-----------
 		$("[data-toggle=tooltip]").tooltip();
 
 		//------------App carousel------------
@@ -60,7 +64,7 @@
 	        autoplay: true,
 	        smartSpeed: 1200,
 	        nav: true,
-	        navText: ["<i class='icofont-arrow-left'></i>", "<i class='icofont-arrow-right'></i>"],
+	        navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
 	        responsiveClass: true,
 	        responsive: {
 	            0: {
@@ -78,35 +82,17 @@
 	        }
 	    });
 
-	    //---------CounterUp-----------
-        $('.counter').counterUp({
-            delay: 10,
-            time: 1000
-        });
-
-       //  ---------testimonial Carousel-----------
-	    $(".testimonial").owlCarousel({
-	        items: 1,
+	    //------------App carousel------------
+	    $(".product-carousel").owlCarousel({
+	        items: 3,
 	        loop: true,
-	        nav: true,
 	        dots: false,
-			margin: 30,
-			autoplay: true,
-			navText: ["<i class='icofont-arrow-left'></i>", "<i class='icofont-arrow-right'></i>"],
-			smartSpeed: 800
-	    });
-
-	    //------------Team carousel------------
-	    $(".team-carousel").owlCarousel({
-	        items: 2,
-	        loop: true,
-	        dots: true,
-	        margin: 30,
+	        margin: 10,
 	        stagePadding: 0,
 	        autoplay: true,
 	        smartSpeed: 1200,
 	        nav: true,
-	        navText: ["<i class='icofont-arrow-left'></i>", "<i class='icofont-arrow-right'></i>"],
+	        navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
 	        responsiveClass: true,
 	        responsive: {
 	            0: {
@@ -119,16 +105,10 @@
 	                items: 3,
 	            },
 	            992: {
-	                items: 1,
-	                stagePadding: 100,
-	            },
-	            1200: {
-	                items: 2,
-	                stagePadding: 100,
+	                items: 3
 	            }
 	        }
 	    });
-
 
 		//------------Website Scroll bottom to top------------
 		$(window).scroll(function () {
