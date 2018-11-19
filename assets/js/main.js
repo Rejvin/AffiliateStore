@@ -126,6 +126,9 @@
 				return false;
 			});
 
+		//---------Product bootstrap slider-----------
+		$("#ex2").slider({});
+
 
     });
 
